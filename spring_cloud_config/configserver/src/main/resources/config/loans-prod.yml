@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+loans:
+  message: "Banking Application inside PROD Environment"
+  contactDetails:
+    name: "Aishwarya Rajesh - Product Owner"
+    email: "aishwarya.rajesh@bank.com"
+  onCallSupport:
+    - (080)121-7890
+    - (080)122-6703

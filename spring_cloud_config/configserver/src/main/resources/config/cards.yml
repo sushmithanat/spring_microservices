@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Banking Application running local Environment"
+  contactDetails:
+    name: "Natima Fathis - Dev Team"
+    email: "fnathim@bank.com"
+  onCallSupport:
+    - (414)7869001
+    - (414)7868002

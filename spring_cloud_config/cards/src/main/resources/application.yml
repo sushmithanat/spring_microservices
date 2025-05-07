@@ -1,0 +1,36 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+  profiles:
+    active: "dev"
+  config:
+    import:
+      - "accounts_qa.yml"
+      - "accounts_prod.yml"
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Banking Application running local Environment"
+  contactDetails:
+    name: "Natima Fathis - Dev Team"
+    email: "fnathim@bank.com"
+  onCallSupport:
+    - (414)7869001
+    - (414)7868002

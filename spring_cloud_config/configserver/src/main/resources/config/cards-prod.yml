@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+cards:
+  message: "Banking Application running PROD Environment"
+  contactDetails:
+    name: "Surya Singh - Product Owner"
+    email: "surya.singh@bank.com"
+  onCallSupport:
+    - (409)7815602
+    - (409)7816718

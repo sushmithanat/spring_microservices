@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Banking Application inside QA Environment"
+  contactDetails:
+    name: "Sumith Ray - QA Lead"
+    email: "rsumith2@bank.com"
+  onCallSupport:
+    - (91)1409765809
+    - (91)1408765777

@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+cards:
+  message: "Banking Application running QA Environment"
+  contactDetails:
+    name: "Sreshta Obrey - QA Lean"
+    email: "osresta@bank.com"
+  onCallSupport:
+    - (1409)674582
+    - (1409)674754

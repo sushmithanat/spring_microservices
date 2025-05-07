@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Banking Application running local Environment"
+  contactDetails:
+    name: "Hussain Nazir"
+    email: "H.naz@bank.com"
+  onCallSupport:
+    - (91)8765790876
+    - (91)8765790667
