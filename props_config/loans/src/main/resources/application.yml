@@ -14,3 +14,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
+
+build:
+  version: "3.0"
+
+loans:
+  message: "Banking Application running local Environment"
+  contactDetails:
+    name: "Hussain Nazir"
+    email: "H.naz@bank.com"
+  onCallSupport:
+    - (91)8765790876
+    - (91)8765790667
