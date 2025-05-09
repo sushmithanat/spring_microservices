@@ -14,22 +14,21 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  config:
-    import:
-      - "accounts_qa.yml"
-      - "accounts_prod.yml"
   profiles:
     active:
-      - "qa"
+      - "prod"
+  application:
+    name: "loans"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5678
+    username: "guest"
+    password: "guest"
 
-build:
-  version: "3.0"
-
-loans:
-  message: "Banking Application running local Environment"
-  contactDetails:
-    name: "Hussain Nazir"
-    email: "H.naz@bank.com"
-  onCallSupport:
-    - (91)8765790876
-    - (91)8765790667
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -14,23 +14,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 
   profiles:
-    active: "dev"
+    active: "prod"
   config:
-    import:
-      - "accounts_qa.yml"
-      - "accounts_prod.yml"
+    import: "optional:configserver:http://localhost:8071/"
+  application:
+    name: "cards"
 
-build:
-  version: "3.0"
-
-cards:
-  message: "Banking Application running local Environment"
-  contactDetails:
-    name: "Natima Fathis - Dev Team"
-    email: "fnathim@bank.com"
-  onCallSupport:
-    - (414)7869001
-    - (414)7868002
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
